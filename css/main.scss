@@ -22,6 +22,9 @@ $space: 20px;
 $mobile-break: 700px;
 $full-width-break: $nav-width + ($space * 4) + $content-max-width;
 
+@import "choices";
+@import "decisions";
+@import "buttons";
 @import "mixins";
 @import "normalize";
 @import "pygments";

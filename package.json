@@ -1,0 +1,24 @@
+{
+  "name": "fanniemae-designsystem",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FDS design tokens, usage, and guidelines",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-theo": "^1.0.0-alpha.4",
+    "gulp-util": "^3.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cassieshumway/fanniemae-designsystem.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cassie",
+  "license": "ISC"
+}

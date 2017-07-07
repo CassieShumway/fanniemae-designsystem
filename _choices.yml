@@ -1,0 +1,108 @@
+# design/props.yml
+global:
+  category: 'web'
+  type: 'spacing'
+props:
+# COLORS-PRIMARY
+  fds-color-navy-50:
+    value: '#000F2B'
+  fds-color-white:
+    value: '#FFFFFF'
+  fds-color-grey-10:
+    value: '#F7F7F8'
+# COLORS-SECONDARY
+  fds-color-blue-50:
+    value: '#00ACDC'
+  fds-color-grey-50:
+    value: '#D9D7DC'
+  fds-color-grey-60:
+    value: '#ADACB0'
+  fds-color-grey-80:
+    value: '#565658'
+# COLORS-TERTIARY
+  fds-color-red-50:
+    value: '#EA4B50'
+  fds-color-green-50:
+    value: '#2CBC85'
+  fds-color-yellow-50:
+    value: '#F7C32B'
+  fds-color-orange-50:
+    value: '#F09125'
+  fds-color-purple-50:
+    value: '#8D6EB2'
+
+# FONT FAMILIES
+  fds-font-family-sans-serif:
+    value: '"Univers lt Pro", Arial, sans-serif'
+  fds-font-family-serif:
+    value: '"Glypha lt Pro", Times New Roman, serif'
+
+# FONT SIZES
+  fds-font-size-xxs:
+    value: '13px'
+  fds-font-size-xs:
+    value: '14px'
+  fds-font-size-s:
+    value: '15px'
+  fds-font-size-m:
+    value: '16px'
+  fds-font-size-l:
+    value: '20px'
+  fds-font-size-xl:
+    value: '24px'
+  fds-font-size-xxl:
+    value: '36px'
+
+# FONT WEIGHTS
+  fds-font-weight-light:
+    value: '300'
+  fds-font-weight-roman:
+    value: '400'
+  fds-font-weight-bold:
+    value: '700'
+
+# FONT LINE HEIGHTS
+  fds-font-line-height-s:
+    value: 16px
+  fds-font-line-height-m:
+    value: 24px
+  fds-font-line-height-l:
+    value: 40px
+
+# SPACING
+  fds-spacing-xxs:
+    value: 4px
+  fds-spacing-xs:
+    value: 8px
+  fds-spacing-s:
+    value: 12px
+  fds-spacing-m:
+    value: 16px
+  fds-spacing-l:
+    value: 24px
+  fds-spacing-xl:
+    value: 32px
+  fds-spacing-xxl:
+    value: 40px
+  fds-spacing-xxxl: 
+    value: 48px
+
+# BORDER WIDTH
+  fds-border-width-s:
+    value: 1px
+  fds-border-width-m:
+    value: 1.5px
+  fds-border-width-l:
+    value: 2px
+
+# BORDER RADIUS
+  fds-border-radius:
+    value: 3px
+
+# SIZES
+  fds-size-16:
+    value: 16px
+  fds-size-40:
+    value: 40px
+  fds-size-80:
+    value: 80px

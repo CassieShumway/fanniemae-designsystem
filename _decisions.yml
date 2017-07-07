@@ -1,0 +1,62 @@
+# tokens/_variables_decisions.yml
+global:
+  category: 'web'
+  type: 'decisions'
+imports:
+  - _choices.yml
+props:
+  # BACKGROUND - COLORS
+  fds-bg-color-body:
+    value: '$fds-color-white'
+  fds-bg-color-body-alt:
+    value: '$fds-color-grey-10'
+  fds-bg-color-nav:
+    value: '$fds-color-navy-50'
+  fds-bg-color-btn-primary:
+    value: '$fds-color-blue-50'
+  fds-bg-color-btn-secondary:
+    value: '$fds-color-white'
+  fds-bg-color-btn-tertiary:
+    value: 'rgba(255,255,255,0)'
+
+  # FONT - COLORS
+  fds-font-color-body:
+    value: '$fds-color-navy-50'
+  fds-font-color-body-alt:
+    value: '$fds-color-grey-80'
+  fds-font-color-btn-primary:
+    value: '$fds-color-white'
+  fds-font-color-btn-secondary:
+    value: '$fds-color-blue-50'
+  fds-font-color-btn-tertiary:
+    value: '$fds-color-blue-50'
+  
+  # FONT-FAMILY
+  fds-font-family-btn:
+    value: '$fds-font-family-sans-serif'
+  fds-font-family-body:
+    value: '$fds-font-family-sans-serif'
+
+  # FONT SIZES
+  fds-font-size-body:
+    value: '$fds-font-size-s'
+
+  # FONT LINE HEIGHT
+  fds-line-height-body:
+    value: '$fds-font-line-height-m'
+
+  # BORDER RADIUS
+  fds-border-radius-btn:
+    value: '$fds-border-radius'
+  
+  # BORDERS
+  fds-border-btn-secondary:
+    value: '$fds-border-width-m solid $fds-color-blue-50'
+  
+  # SIZING
+  fds-height-btn:
+    value: '$fds-size-40'
+
+  # PADDING
+  fds-padding-btn:
+    value: '0px $fds-spacing-l'

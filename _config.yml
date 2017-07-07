@@ -22,6 +22,8 @@ social:
 # -----
 # Build
 
+github: [metadata]
+
 permalink: pretty
 
 gems:
@@ -33,7 +35,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - LICENCE
+  - LICENSE
+  - packge.json
+  - node_modules
+  - gulpfile.js
 
 collections:
   docs:

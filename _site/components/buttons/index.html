@@ -23,9 +23,9 @@
 <meta property="og:url" content="http://localhost:4000/components/buttons/" />
 <meta property="og:site_name" content="Design System" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-06-21T17:27:30-04:00" />
+<meta property="article:published_time" content="2017-07-06T18:42:57-04:00" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"Article","headline":"Buttons","author":{"@type":"Person","name":null},"datePublished":"2017-06-21T17:27:30-04:00","dateModified":"2017-06-21T17:27:30-04:00","description":"Developed with our core Design Principles in mind, our color palette communicates trust and simplicity while meeting web accessibility standards that are 508 compliant.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/siteicon.png"},"name":null},"url":"http://localhost:4000/components/buttons/"}</script>
+{"@context":"http://schema.org","@type":"Article","headline":"Buttons","author":{"@type":"Person","name":null},"datePublished":"2017-07-06T18:42:57-04:00","dateModified":"2017-07-06T18:42:57-04:00","description":"Developed with our core Design Principles in mind, our color palette communicates trust and simplicity while meeting web accessibility standards that are 508 compliant.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/siteicon.png"},"name":null},"url":"http://localhost:4000/components/buttons/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -107,28 +107,78 @@
 			<article class="content">
 				<p>Developed with our core Design Principles in mind, our color palette communicates trust and simplicity while meeting web accessibility standards that are 508 compliant.</p>
 
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="n">foo</span> <span class="n">bar</span><span class="o">=</span><span class="s1">'single quotes'</span> <span class="n">baz</span><span class="o">=</span><span class="s2">"double quotes"</span> <span class="n">test3</span><span class="o">=</span><span class="vg">$test3</span><span class="p">}</span>
+
+<span class="o">&lt;</span><span class="n">ul</span><span class="o">&gt;</span>
+  <span class="p">{</span><span class="n">foreach</span> <span class="n">from</span><span class="o">=</span><span class="vg">$myvariable</span> <span class="n">item</span><span class="o">=</span><span class="n">data</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">{</span><span class="vg">$data</span><span class="p">.</span><span class="nf">field</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/li&gt;
+  {foreachelse}
+    &lt;li&gt;No Data&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+  <span class="p">{</span><span class="sr">/foreach}
+&lt;/u</span><span class="n">l</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">div</span> <span class="k">class</span><span class="o">=</span><span class="s2">"{if $foo}class1{else}class2{/if}"</span><span class="o">&gt;</span><span class="p">{</span><span class="vg">$foo</span><span class="p">.</span><span class="nf">bar</span><span class="p">.</span><span class="nf">baz</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/div&gt;
+
+</span></code></pre>
+</div>
+
 <h3 id="primary-buttons">Primary Buttons</h3>
 
-<p>These are buttons that are necessary to complete a task or goal. Generally guiding the user to complete one main action.</p>
-
-<h3 id="rules--guidelines">Rules &amp; Guidelines</h3>
-<p>Do Use</p>
-
-<ol>
-  <li></li>
-</ol>
+<p>These are buttons that are necessary to complete a task or goal. Generally, they are meant to guide the user to complete one main action. You may use them within a form or as an inline element on a page.</p>
 
 <p>Do Not Use:</p>
 
 <ol>
-  <li>Icons within</li>
   <li>Excessively within a page</li>
-  <li>More than one within an element</li>
-  <li>More than two words within</li>
+  <li>More than one primary button within an element or container</li>
+  <li>More than two words within the button to describe the action</li>
 </ol>
 
+<p><button class="btn btn-reverse btn-arrow">
+<span>Get Started<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
+</button></p>
+
+<h3 id="implementation">Implementation</h3>
+<p>FDS utilizes SASS to compile code.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Params</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>button-base</td>
+      <td> </td>
+      <td>Base styles used in every button.</td>
+    </tr>
+    <tr>
+      <td>Row 2 col 1</td>
+      <td>Row 2 col 2</td>
+      <td>Row 2 col 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><button>test</button></p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>
+</code></pre>
+</div>
+
+<h3 id="secondary-buttons">Secondary Buttons</h3>
+<p>These are buttons that assist the user when completing a task or goal. Icons are optional within secondary buttons.</p>
+
+<p><button class="btn btn-arrow btn-border">
+<span>Get Started<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8" enable-background="new 0 0 36.1 25.8" xml:space="preserve"><g><line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9" x2="34" y2="12.9"></line><polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="22.2,1.1 34,12.9 22.2,24.7   "></polyline></g></svg></span>
+</button></p>
+
+<h1 id="rules--guidelines">Rules &amp; Guidelines</h1>
+
 <blockquote>
-  <p>See a typo? Uh oh, how embarrassing! Please let us know what we can fix by contacting us at <a href="a href=&quot;mailto:cdx@fanniemae.com">CDX@fanniemae.com</a>.</p>
+  <p>See a typo? Uh oh! Please let us know what we can fix by contacting us at <a href="a href=&quot;mailto:cdx@fanniemae.com">CDX@fanniemae.com</a>.</p>
 </blockquote>
 
 			</article>
