@@ -8,6 +8,8 @@
   
   $fds-border-width-s: 1px;
   
+  $fds-hover: $fds-button-hover;
+  
   $fds-color-grey-80: #565658;
   
   $fds-font-family-body: $fds-font-family-sans-serif;
@@ -95,6 +97,8 @@
   $fds-color-orange-50: #F09125;
   
   $fds-size-16: 16px;
+  
+  $fds-button-hover: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);;
   
   $fds-color-red-50: #EA4B50;
   

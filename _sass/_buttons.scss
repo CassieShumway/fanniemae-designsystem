@@ -6,57 +6,126 @@
    BUTTON BASE
    ================= */
 
-// @mixin button-base {
-// 	font-size: 13px;
-// 	color: $fds-color-white-50;
-// 	cursor: pointer;
-// 	padding: 14px 30px;
-// 	border: none;
-// 	text-transform: uppercase;
-// }
-
-// .button { @include button-base; }
-
-/* =================
-   PRIMARY BUTTON 
-   ================= */
-
-// .button.fm-primary-button {
-//   @include button-base;
-//   color: $fds-color-white-50;
-//   background-color: $fm-color-primary;
-//   border: none;
-// }
-
 * {
   box-sizing: border box;
 }
+
+@mixin btn-base {
+  border-radius: $fds-border-radius-btn;
+  cursor: pointer;
+  font-family: $fds-font-family-btn;
+  font-size: $fds-font-size-xxs;
+  height: $fds-height-btn;
+	padding: $fds-padding-btn;
+  outline:none;
+  text-align: center;
+	text-transform: uppercase;
+  transition: $fds-hover;
+}
+
+// .button {
+//   @include btn-base;
+// }
+
+/* =================
+   BUTTON FORMULA
+   ================= */
+
+//---BUTTON MIXIN
+@mixin buttonStyle ($bg,$fontColor,$border){
+  // font-family: $fds-font-family-btn;
+  // font-size: $fds-font-size-xxs;
+  // border-radius: $fds-border-radius-btn;
+  // height: $fds-height-btn;
+  // padding: $fds-padding-btn;
+  // transition: $fds-hover;
+  //--------MIXIN ARGUMENTS
+  background-color: $bg;
+  color: $fontColor;
+  border:$border;
+  //--------NON-TOKENS
+  // cursor: pointer;
+  // outline:none;
+  // text-align: center;
+  // text-transform: uppercase;
+}
+
+/* =================
+   BUTTONS
+   ================= */
+
+//---PRIMARY BUTTON
+.btn-primary{
+  @include buttonStyle($fds-bg-color-btn-primary,$fds-font-color-btn-primary,none);
+  @include btn-base;
+  &:hover{
+    background-color: mix(black,$fds-bg-color-btn-primary, 20%);
+
+    -o-transition: .5s; -ms-transition: .5s; -moz-transition: .5s; -webkit-transition: .5s; transition: .5s;
+  }
+  &:active{
+    background-color: mix(black,$fds-bg-color-btn-primary, 40%);
+  }
+}
+
+//---SECONDARY BUTTON
+.btn-secondary{
+  @include buttonStyle($fds-bg-color-btn-secondary,$fds-font-color-btn-secondary,$fds-border-btn-secondary);
+  &:hover{
+    background-color: mix(white,$fds-color-blue-50,90%);
+
+    -o-transition: .5s; -ms-transition: .5s; -moz-transition: .5s; -webkit-transition: .5s; transition: .5s;
+  }
+  &:active{
+    background-color: mix(white,$fds-color-blue-50,80%);
+  }
+}
+
+//---TERTIARY BUTTON
+.btn-tertiary{
+  @include buttonStyle($fds-bg-color-btn-tertiary,$fds-font-color-btn-tertiary,none);
+  &:hover{
+    color: mix(black,$fds-color-blue-50,20%);
+  }
+  &:active{
+    color: mix(black,$fds-color-blue-50,40%);
+  }
+}
+
+//---------------BODY TEXT
+@mixin bodyTextStyle($textcolor){
+  font-family: $fds-font-family-body;
+  font-size: $fds-font-size-body;
+  color: $textcolor;
+  line-height: $fds-line-height-body;
+}
+
+.text-body {
+  @include bodyTextStyle($fds-font-color-body);
+}
+
+.text-body-alt {
+  @include bodyTextStyle($fds-font-color-body-alt);
+}
+
+
+
+
 
 $black: #1d1d1d;
 
 .btn,
 button {
-  background: $black;
-  color: white;
-  border: none;
-  font-size: 10px;
-  font-size: 1rem;
-  background-color: $black;
-  color: white;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 14px 21px;
-  padding: 1.4rem 2.1rem;
-  border: 2px solid $black;
-  transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+  // padding: 14px 21px;
+  // padding: 1.4rem 2.1rem;
+  // border: 2px solid $black;
+  // transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
   display: inline-block;
-  cursor: pointer;
   width: 100%;
   min-width: 200px;
   min-width: 20rem;
-  outline: none;
   vertical-align: middle;
-  text-align: center;
   position: relative;
   overflow: hidden;
   @media (min-width: 400px) {
@@ -67,9 +136,9 @@ button {
     padding: 1.6rem 2.8rem;
   }
   &:hover {
-    background: lighten($black, 5%);
-    border-color: lighten($black, 5%);
-    color: #fff;
+    // background: lighten($black, 5%);
+    // border-color: lighten($black, 5%);
+    // color: #fff;
   }
 }
 
